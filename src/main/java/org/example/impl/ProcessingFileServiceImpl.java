@@ -26,9 +26,6 @@ public class ProcessingFileServiceImpl implements ProcessingFileService {
                 }
             }
             List<String> startedAddresses = findStartedAddresses(buildings, chainAddresses);
-//            for (String address : startedAddresses) {
-//                findStartedAddresses(buildings, chainAddresses);
-//            }
             Map<String, Integer> buildingLength = new HashMap<>();
             for (String address : startedAddresses) {
                 findMaxLength(address, buildings, buildingLength);
